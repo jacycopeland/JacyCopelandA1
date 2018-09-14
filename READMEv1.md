@@ -31,7 +31,7 @@ Goals:  Create a Repository
         At startup select console or file input ->  console will create a random gen of cards
                                                     file will pull player commands and cards from a file
         
-Goals Completed:Create a Respository
+Goals Completed:Create a Respository, set up dependecies
 
 Important meathods:
 
