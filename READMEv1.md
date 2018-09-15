@@ -9,8 +9,10 @@ End Date:  September 20th 2018
 
 Purpose: to create a simple Blackjack program using TDD.
 
-File List:      DeckCreationTest.java - a class dedicated to testing a deck's functionality 
-                CardTest.java - a class dedicated to testing a card
+File List:  Card.java - class definition of a card
+            CardTest.java - a class dedicated to testing a card    
+            DeckCreationTest.java - a class dedicated to testing a deck's functionality 
+
 
 Goals:  Create a Repository 
         Link Reposity to TA
