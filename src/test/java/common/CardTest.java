@@ -8,7 +8,7 @@ public class CardTest extends TestCase{
 	public void testCardValues(Card card) {
 		System.out.println("The card is "+ card.getSuit() + card.getNumber()+ "is worth" + card.getPoints() + "is face ");
 		
-		if(card.face == false)
+		if(card.getFace() == false)
 		{
 			System.out.println("down./n");
 		}
@@ -22,9 +22,9 @@ public class CardTest extends TestCase{
 	//test card creation
 	public void createCard()
 	{
-		Card SA = new Card(S,A,1);
+		Card SA = new Card('S','A',1);
 		//should not create
-		Card NA  = new card(B,2,2)
+		Card NA  = new Card('B','2',2);
 			
 		testCardValues(SA);
 	
