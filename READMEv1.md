@@ -4,12 +4,13 @@ Name: Jacy Copeland
 Id#: 101037790
 Date Started: September 8th 2018
 
-Current Date: September 9th 2018
+Current Date: September 14th 2018
 End Date:  September 20th 2018
 
 Purpose: to create a simple Blackjack program using TDD.
 
-File List:
+File List:      DeckCreationTest.java - a class dedicated to testing a deck's functionality 
+                CardTest.java - a class dedicated to testing a card
 
 Goals:  Create a Repository 
         Link Reposity to TA
@@ -31,7 +32,7 @@ Goals:  Create a Repository
         At startup select console or file input ->  console will create a random gen of cards
                                                     file will pull player commands and cards from a file
         
-Goals Completed:Create a Respository
+Goals Completed:Create a Respository, set up dependecies
 
 Important meathods:
 
