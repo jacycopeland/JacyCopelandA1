@@ -4,13 +4,14 @@ Name: Jacy Copeland
 Id#: 101037790
 Date Started: September 8th 2018
 
-Current Date: September 14th 2018
+Current Date: September 15th 2018
 End Date:  September 20th 2018
 
 Purpose: to create a simple Blackjack program using TDD.
 
 File List:  Card.java - class definition of a card
             CardTest.java - a class dedicated to testing a card    
+            Deck.java - a class declaration for the deck.
             DeckCreationTest.java - a class dedicated to testing a deck's functionality 
 
 
