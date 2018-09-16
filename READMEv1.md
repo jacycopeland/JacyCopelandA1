@@ -13,6 +13,7 @@ File List:  Card.java - class definition of a card
             CardTest.java - a class dedicated to testing a card    
             Deck.java - a class declaration for the deck.
             DeckCreationTest.java - a class dedicated to testing a deck's functionality 
+            DealerTest.java - a class that tests different Dealer functions and hands
 
 
 Goals:  Create a Repository 
