@@ -44,6 +44,8 @@ public class Deck {
 		size--;
 		
 		//return the "top card" and remove it from the deck
+		
+	
 		return deck.remove(size);
 		
 	}

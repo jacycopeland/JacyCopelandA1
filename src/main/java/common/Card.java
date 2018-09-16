@@ -5,7 +5,7 @@ public class Card {
 	
 	//Card is Made of:
 	private char Suit;
-	private char Number;
+	private String Number;
 	private int Points;
 	private boolean Face;
 	
@@ -14,7 +14,7 @@ public class Card {
 	
 	
 	//constructor for a card -> cards are made face down
-	public Card(char suit, char num, int p)
+	public Card(char suit, String num, int p)
 	{
 		Suit = suit;
 		Number = num;
@@ -27,7 +27,7 @@ public class Card {
 		return Suit;
 	}
 	
-	public char getNumber()
+	public String getNumber()
 	{
 		return Number;
 	}

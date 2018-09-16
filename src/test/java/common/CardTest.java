@@ -31,9 +31,9 @@ public class CardTest extends TestCase{
 	//test card creation
 	public void createCard()
 	{
-		Card SA = new Card('S','A',1);
+		Card SA = new Card('S',"A",1);
 		//should not create
-		Card NA  = new Card('B','2',2);
+		Card NA  = new Card('B',"2",2);
 			
 		testCardValues(SA);
 		testCardValues(NA);

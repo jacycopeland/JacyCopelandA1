@@ -16,12 +16,14 @@ public class DeckCreationTest extends TestCase {
 		{
 			Card c =deck.drawCard() ;
 			//print the cards
-			System.out.println(+c.getSuit() + c.getNumber() + "/n");
+
+			System.out.println((char)(c.getSuit())+ (String)(c.getNumber()) + "\n");
+	
 		}
 	}
 		
 	//function for checking if the deck is full
-	public isFull(Deck deck)
+	public void isFull(Deck deck)
 	{
 		if(deck.getSize() != deck.MAX_SIZE)
 		{
@@ -47,9 +49,16 @@ public class DeckCreationTest extends TestCase {
 	public void testInsert(Deck deck)
 	{
 		//create a test card
-		Card hk = new Card('H','K',13);
+		Card hk = new Card('H',"K",13);
+		Card sk = new Card('S',"K",13);
+		Card h2 = new Card('H',"2",13);
+		Card h4 = new Card('H',"4",13);
 		
 		deck.insertCard(hk);
+		deck.insertCard(sk);
+		deck.insertCard(h2);
+		deck.insertCard(h4);
+		
 	}
 	
 	//test remove function
@@ -67,7 +76,10 @@ public class DeckCreationTest extends TestCase {
 	
 	
 	testInsert(d);
+	testExistance(d);
 	testShuffled(d);
+	testDraw(d);
+	isFull(d);
 	}
 	
 }
