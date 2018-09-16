@@ -6,6 +6,13 @@ public class CardTest extends TestCase{
 
 	//test to see if a card properly is created
 	public void testCardValues(Card card) {
+		
+		//if wrong suit specify
+		if(card.getSuit()!='S'|| card.getSuit()!='H'||card.getSuit()!='D'||card.getSuit()!='C')
+		{
+			System.out.println("Invalid Card Creation!");
+		}
+		
 		System.out.println("The card is "+ card.getSuit() + card.getNumber()+ "is worth" + card.getPoints() + "is face ");
 		
 		if(card.getFace() == false)
@@ -15,6 +22,8 @@ public class CardTest extends TestCase{
 		else {
 			System.out.println("up./n");
 		}
+		
+		
 		
 		
 	}
@@ -27,6 +36,7 @@ public class CardTest extends TestCase{
 		Card NA  = new Card('B','2',2);
 			
 		testCardValues(SA);
+		testCardValues(NA);
 	
 		
 	}

@@ -1,6 +1,5 @@
 package common;
 
-import java.util.List;
 
 public class Card {
 	
@@ -43,8 +42,19 @@ public class Card {
 		return Face;
 	}
 	
+	//set the face of the card
+	public void setFace()
+	{
+		if(Face == false)
+		{
+			Face = true;
+		}
+		else {
+			Face =false;
+		}
+		}
+	}
 	
 	
 	
-	
-}
+
