@@ -15,6 +15,7 @@ File List:  Card.java - class definition of a card
             DeckCreationTest.java - a class dedicated to testing a deck's functionality 
             Dealer.java -  a class definition and meathods for the dealer AI
             DealerTest.java - a class that tests different Dealer functions and hands
+            PlayerTest.java - a class that tests funtionality of a player
 
 
 Goals:  Create a Repository 
@@ -41,6 +42,6 @@ Goals Completed:Create a Respository, set up dependecies, card and deck classes 
 
 Important meathods:
 
-Limitations:
+Limitations: Aces currently act as one point with multiple present for dealer.
 
 Notes:
