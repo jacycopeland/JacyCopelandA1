@@ -41,6 +41,34 @@ public class DealerTest extends TestCase {
 	
 	
 	
+	public void testblackjack(){
+		//test the initial hand of the dealer
+		//fails if both cards are or are not visible
+		Dealer d = new Dealer();
+		List<Card> l = new ArrayList<>();
+		Deck f = new Deck(l);
+		f.insertCard(new Card('S',"10",10));
+		f.insertCard(new Card('S',"A",11));
+
+
+		
+		System.out.println("The Dealer is drawing Cards: ");
+		d.initalDraw(f);
+		
+		System.out.println("Checking dealers current score: ");
+		//function to check if the dealer has a blackjack
+		d.checkScore();
+		System.out.println("The Dealer is drawing Cards: ");
+		//if dealer hand is less than 17 points or has an ace worth and 17 points draw face up stop after
+		d.drawMore(f);
+		System.out.println("Revealing Secret Card");
+		//check that the card is revealed at game end
+		d.reveal();
+		System.out.println("Blackjack or bust?");
+		//check for a blackjack or bust
+		d.winOrBust();
+		}
+	
 	public void testAces(){
 	//test the initial hand of the dealer
 	//fails if both cards are or are not visible
