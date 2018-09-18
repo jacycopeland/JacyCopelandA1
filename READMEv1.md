@@ -15,6 +15,7 @@ File List:  Card.java - class definition of a card
             DeckCreationTest.java - a class dedicated to testing a deck's functionality 
             Dealer.java -  a class definition and meathods for the dealer AI
             DealerTest.java - a class that tests different Dealer functions and hands
+            Player.java - a class that defines a player
             PlayerTest.java - a class that tests funtionality of a player
 
 
