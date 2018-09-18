@@ -33,10 +33,10 @@ public class Dealer {
 	public void initalDraw(Deck d)
 	{
 		hand.add(d.drawCard());
-		checkScore();
+		checkScore(hand.get(hand.size()-1));
 		
 		hand.add(d.drawCard());
-		checkScore();
+		checkScore(hand.get(hand.size()-1));
 		System.out.println("The Dealer's hand is ? and " + hand.get(1).getSuit() + hand.get(1).getNumber() + "\n");
 		
 		//show that the card is face up
@@ -45,23 +45,20 @@ public class Dealer {
 	}
 	
 	//function for adding and checking the score
-	public int checkScore()
+	public int checkScore(Card c)
 	{
-		score =0;
-		
-		for(Card c: hand) {
-		
-		if((score + c.getPoints()) > 11 && c.getNumber().equals("A"))
-		{
-			c.SetPoints();	
+		if(c.getNumber().equals("A") && score > 10) {
+			c.SetPoints();
+			
 		}
 		
 		score = score + c.getPoints();
-		}
+		
 		
 		
 		//.out.println("Points are: " + score + "\n");
 		return score;
+
 	}
 	
 	//draw more cards function
@@ -82,7 +79,7 @@ public class Dealer {
 		while(score < 17 || (score == 17 && a!=null))
 		{
 			hand.add(d.drawCard());
-			checkScore();
+			checkScore(hand.get(hand.size()-1));
 			System.out.println("Dealer has drawn a " + hand.get(hand.size()-1).getSuit() + hand.get(hand.size()-1).getNumber() +"\n" );
 		}
 	}

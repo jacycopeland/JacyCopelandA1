@@ -27,7 +27,7 @@ public class DealerTest extends TestCase {
 	
 	System.out.println("Checking dealers current score: ");
 	//fuction to check if the dealer has a blackjack
-	System.out.println(d.checkScore());
+	
 	System.out.println("The Dealer is drawing Cards: ");
 	//if dealer hand is less than 17 points or has an ace worth and 17 points draw face up stop after
 	d.drawMore(c);
@@ -57,7 +57,7 @@ public class DealerTest extends TestCase {
 		
 		System.out.println("Checking dealers current score: ");
 		//function to check if the dealer has a blackjack
-		d.checkScore();
+
 		System.out.println("The Dealer is drawing Cards: ");
 		//if dealer hand is less than 17 points or has an ace worth and 17 points draw face up stop after
 		d.drawMore(f);
@@ -88,7 +88,7 @@ public class DealerTest extends TestCase {
 	
 	System.out.println("Checking dealers current score: ");
 	//function to check if the dealer has a blackjack
-	d.checkScore();
+
 	System.out.println("The Dealer is drawing Cards: ");
 	//if dealer hand is less than 17 points or has an ace worth and 17 points draw face up stop after
 	d.drawMore(f);
@@ -117,7 +117,7 @@ public class DealerTest extends TestCase {
 	
 	System.out.println("Checking dealers current score: ");
 	//function to check if the dealer has a blackjack
-	d.checkScore();
+
 	System.out.println("The Dealer is drawing Cards: ");
 	//if dealer hand is less than 17 points or has an ace worth and 17 points draw face up stop after
 	d.drawMore(f);
@@ -147,7 +147,8 @@ public class DealerTest extends TestCase {
 	
 	System.out.println("Checking dealers current score: ");
 	//fuction to check if the dealer has a blackjack
-	d.checkScore();
+	//d.checkScore();
+	System.out.println(d.getScore());
 	System.out.println("The Dealer is drawing Cards: ");
 	//if dealer hand is less than 17 points or has an ace worth and 17 points draw face up stop after
 	d.drawMore(e);
