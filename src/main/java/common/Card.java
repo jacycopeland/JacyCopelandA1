@@ -37,6 +37,14 @@ public class Card {
 		return Points;
 	}
 	
+	public void SetPoints()
+	{
+		
+		Points = Points -10;
+		
+		//System.out.println("Hello");
+	}
+	
 	public boolean getFace()
 	{
 		return Face;

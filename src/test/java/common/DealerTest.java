@@ -18,18 +18,52 @@ public class DealerTest extends TestCase {
 	c.insertCard(new Card('H',"2",2));
 	c.insertCard(new Card('D',"10",10));
 	c.insertCard(new Card('S',"2",2));
-	c.insertCard(new Card('D',"8",7));
+	c.insertCard(new Card('D',"8",8));
+	c.insertCard(new Card('C',"10",10));
 	
 	
 	System.out.println("The Dealer is drawing Cards: ");
-	public void d.initalDraw(Deck c);
+	d.initalDraw(c);
 	
 	System.out.println("Checking dealers current score: ");
 	//fuction to check if the dealer has a blackjack
+	System.out.println(d.checkScore());
+	System.out.println("The Dealer is drawing Cards: ");
+	//if dealer hand is less than 17 points or has an ace worth and 17 points draw face up stop after
+	d.drawMore(c);
+	System.out.println("Revealing Secret Card");
+	//check that the card is revealed at game end
+	d.reveal();
+	System.out.println("Blackjack or bust?");
+	//check for a blackjack or bust
+	d.winOrBust();
+	}
+	
+	
+	
+	public void testAces(){
+	//test the initial hand of the dealer
+	//fails if both cards are or are not visible
+	Dealer d = new Dealer();
+	List<Card> l = new ArrayList<>();
+	Deck f = new Deck(l);
+	f.insertCard(new Card('S',"10",10));
+	f.insertCard(new Card('C',"8",8));
+	f.insertCard(new Card('H',"A",11));
+	f.insertCard(new Card('D',"A",11));
+	f.insertCard(new Card('S',"A",11));
+
+
+	
+	System.out.println("The Dealer is drawing Cards: ");
+	d.initalDraw(f);
+	
+	System.out.println("Checking dealers current score: ");
+	//function to check if the dealer has a blackjack
 	d.checkScore();
 	System.out.println("The Dealer is drawing Cards: ");
 	//if dealer hand is less than 17 points or has an ace worth and 17 points draw face up stop after
-	d.drawMore();
+	d.drawMore(f);
 	System.out.println("Revealing Secret Card");
 	//check that the card is revealed at game end
 	d.reveal();
@@ -44,21 +78,21 @@ public class DealerTest extends TestCase {
 	//fails if both cards are or are not visible
 	Dealer d = new Dealer();
 	List<Card> l = new ArrayList<>();
-	Deck c = new Deck(l);
-	c.insertCard(new Card('H',"2",2));
-	c.insertCard(new Card('D',"10",10));
-	c.insertCard(new Card('S',"9",9));
+	Deck f = new Deck(l);
+	f.insertCard(new Card('H',"2",2));
+	f.insertCard(new Card('D',"10",10));
+	f.insertCard(new Card('S',"9",9));
 
 	
 	System.out.println("The Dealer is drawing Cards: ");
-	public void d.initalDraw(Deck c);
+	d.initalDraw(f);
 	
 	System.out.println("Checking dealers current score: ");
-	//fuction to check if the dealer has a blackjack
+	//function to check if the dealer has a blackjack
 	d.checkScore();
 	System.out.println("The Dealer is drawing Cards: ");
 	//if dealer hand is less than 17 points or has an ace worth and 17 points draw face up stop after
-	d.drawMore();
+	d.drawMore(f);
 	System.out.println("Revealing Secret Card");
 	//check that the card is revealed at game end
 	d.reveal();
@@ -73,21 +107,22 @@ public class DealerTest extends TestCase {
 	//fails if both cards are or are not visible
 	Dealer d = new Dealer();
 	List<Card> l = new ArrayList<>();
-	Deck c = new Deck(l);
-	c.insertCard(new Card('H',"A",1));
-	c.insertCard(new Card('S',"6",6));
-	c.insertCard(new Card('D',"8",7));
+	Deck e = new Deck(l);
+	
+	e.insertCard(new Card('D',"8",8));
+	e.insertCard(new Card('S',"6",6));
+	e.insertCard(new Card('H',"A",11));
 	
 	
 	System.out.println("The Dealer is drawing Cards: ");
-	public void d.initalDraw(Deck c);
+	 d.initalDraw(e);
 	
 	System.out.println("Checking dealers current score: ");
 	//fuction to check if the dealer has a blackjack
 	d.checkScore();
 	System.out.println("The Dealer is drawing Cards: ");
 	//if dealer hand is less than 17 points or has an ace worth and 17 points draw face up stop after
-	d.drawMore();
+	d.drawMore(e);
 	System.out.println("Revealing Secret Card");
 	//check that the card is revealed at game end
 	d.reveal();
