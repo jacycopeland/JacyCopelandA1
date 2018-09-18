@@ -44,4 +44,4 @@ Important meathods:
 
 Limitations: Aces currently act as one point with multiple present for dealer.
 
-Notes:
+Notes: player only has one test file as it can be rerun with different inputs from the player.
