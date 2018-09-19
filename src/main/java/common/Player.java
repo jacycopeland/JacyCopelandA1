@@ -78,6 +78,7 @@ public class Player {
 			
 			//Get the input from the user
 			
+			@SuppressWarnings("resource")
 			Scanner response = new Scanner(System.in);
 			
 			String r = response.nextLine();

@@ -6,20 +6,20 @@ public class GameTest extends TestCase {
 	
 	
 	public void test1() {
-	Game g = new game();
+	Game g = new Game();
 	
 	//test deck
-	for(Card c: g.deck)
+	for(Card c: g.getDeck().getDeck())
 	{
-		System.out.println(c.getSuit() + c.getNumber()+ "\n\n");
+		System.out.println(c.getSuit() + c.getNumber()+ "\n");
 	}
 	
 	//test shuffle
-	g.deck.shuffle();
+	g.getDeck().shuffle();
 	
-	for(Card e: g.deck)
+	for(Card e: g.getDeck().getDeck())
 	{
-		System.out.println(c.getSuit() + c.getNumber()+ "\n\n");
+		System.out.println(e.getSuit() + e.getNumber()+ "\n");
 	}
 	
 	//test initial draws
@@ -32,5 +32,5 @@ public class GameTest extends TestCase {
 	
 	
 	//test who wins
-	g. testWin();}
+	g.testWin();}
 }
