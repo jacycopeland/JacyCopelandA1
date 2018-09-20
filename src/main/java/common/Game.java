@@ -1,4 +1,8 @@
 package common;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -84,6 +88,72 @@ public class Game {
 		
 		deck.shuffle();
 		
+		player.initalDraw(deck);
+		
+		//System.out.println("\n");
+		
+		//dealer draws
+		dealer.initalDraw(deck);
+		
+	//	System.out.println("\n");
+		
+		
+	}
+	//run the game via a file
+	public void startGameFile() throws IOException {
+		System.out.println("Welcome to Blackjack!\n\n");
+	//	System.out.println("Here is the player's initial hand: \n");
+		//player draws
+		
+		//deck.shuffle();
+		
+		
+		//clear the deck so it can use files
+		while(!deck.getDeck().isEmpty())
+		{
+			deck.getDeck().remove(0);
+		}
+		
+		//add in the files to read 
+		BufferedReader buffer = new BufferedReader(new FileReader("BlackJack.txt"));
+		
+			try {
+				String line = buffer.readLine();
+				
+				while(line!=null)
+				{
+					//make 2 strings
+					char suit = line.charAt(0);
+					String num  = line.substring(1, 2);
+					int p =0;
+					
+					if(suit == 'C'|| suit == 'D'||suit == 'H'||suit == 'S') {
+						if(num.equals("J")||num.equals("Q")||num.equals("K"))
+						{
+							p =10;
+							
+						}
+						else if(num.equals("A"))
+						{
+							p =11;
+						}
+						
+						else {
+							p = (Integer.parseInt(num));
+						}
+						
+						deck.insertCard(new Card(suit, num, p));
+					}
+				}
+			}finally {
+				try {
+					buffer.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+	
 		player.initalDraw(deck);
 		
 		//System.out.println("\n");
