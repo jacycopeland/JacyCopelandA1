@@ -1,0 +1,9 @@
+H2
+D5
+S10
+SA
+DA
+H4
+CJ
+CQ
+SK
