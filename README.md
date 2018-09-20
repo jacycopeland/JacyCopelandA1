@@ -9,7 +9,10 @@ End Date:  September 20th 2018
 
 Purpose: to create a simple Blackjack program using TDD.
 
-File List:  Card.java - class definition of a card
+File List:  
+            Blackjack.java - the final game in console version.
+            BlackjackTest.java -  coe for testing the game
+            Card.java - class definition of a card
             CardTest.java - a class dedicated to testing a card    
             Deck.java - a class declaration for the deck.
             DeckCreationTest.java - a class dedicated to testing a deck's functionality 
