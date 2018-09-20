@@ -1,9 +1,8 @@
-H2
-D5
 S10
-SA
+S
 DA
+H
 H4
 CJ
-CQ
-SK
+C2
+S7
