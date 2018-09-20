@@ -109,6 +109,8 @@ public class Game {
 		
 		player.drawMore(deck);
 		
+		System.out.println("Your score is : " + player.getScore());
+		
 		player.winOrBust();}
 		
 		//else specify that there is a back jack

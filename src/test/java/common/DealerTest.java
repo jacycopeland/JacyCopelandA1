@@ -160,6 +160,37 @@ public class DealerTest extends TestCase {
 	d.winOrBust();
 	}
 	
+	public void testSplit() {
+		
+		Dealer d = new Dealer();
+		List<Card> l = new ArrayList<>();
+		Deck e = new Deck(l);
+		
+		e.insertCard(new Card('D',"9",9));
+		e.insertCard(new Card('H',"9",9));
+		e.insertCard(new Card('D',"2",9));
+		e.insertCard(new Card('S',"4",9));
+		e.insertCard(new Card('C',"9",9));
+		
+		System.out.println("The Dealer is drawing Cards: ");
+		 d.initalDraw(e);
+		 
+		 split();
+		
+		System.out.println("Checking dealers current score: ");
+		//fuction to check if the dealer has a blackjack
+		//d.checkScore();
+		System.out.println(d.getScore());
+		System.out.println("The Dealer is drawing Cards: ");
+		//if dealer hand is less than 17 points or has an ace worth and 17 points draw face up stop after
+		d.drawMore(e);
+		System.out.println("Revealing Secret Card");
+		//check that the card is revealed at game end
+		d.reveal();
+		System.out.println("Blackjack or bust?");
+		//check for a blackjack or bust
+		d.winOrBust();
+	}
 	
 
 }
