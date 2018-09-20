@@ -81,14 +81,17 @@ public class Game {
 		System.out.println("Welcome to Blackjack!\n\n");
 	//	System.out.println("Here is the player's initial hand: \n");
 		//player draws
+		
+		deck.shuffle();
+		
 		player.initalDraw(deck);
 		
-		System.out.println("\n");
+		//System.out.println("\n");
 		
 		//dealer draws
 		dealer.initalDraw(deck);
 		
-		System.out.println("\n");
+	//	System.out.println("\n");
 		
 		
 	}
@@ -140,7 +143,7 @@ public class Game {
 		{
 			playerWin = true;
 		}
-		else if (player.getScore() > dealer.getScore())
+		else if (player.getScore() > dealer.getScore() && player.getScore() < 22)
 		{
 			playerWin = true;
 		}

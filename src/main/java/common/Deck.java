@@ -67,6 +67,6 @@ public class Deck {
 		deck.add(c);
 		
 		//increment 
-		System.out.println("Card: " + c.getSuit() +c.getNumber() + "has been added to the deck.");
+		//System.out.println("Card: " + c.getSuit() +c.getNumber() + "has been added to the deck.");
 	}
 }

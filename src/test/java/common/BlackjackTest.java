@@ -1,7 +1,15 @@
 package common;
 
-public class BlackjackTest {
+import junit.framework.TestCase;
+
+public class BlackjackTest  extends TestCase {
 	
-	testConsole();
+	public void testConsole()
+	{
+		Blackjack g = new Blackjack();
+		g.console();
+	}
+	
+
 
 }
