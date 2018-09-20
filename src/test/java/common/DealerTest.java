@@ -184,6 +184,7 @@ public class DealerTest extends TestCase {
 		System.out.println("The Dealer is drawing Cards: ");
 		//if dealer hand is less than 17 points or has an ace worth and 17 points draw face up stop after
 		d.drawMore(e);
+		d.drawSplitMore(e);
 		System.out.println("Revealing Secret Card");
 		//check that the card is revealed at game end
 		d.reveal();

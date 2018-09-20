@@ -6,11 +6,13 @@ public class Dealer {
 	//Dealer has a :
 	private int score;
 	private List<Card> hand;
+	private List<Card> hand2;
 	
 	//constructor for a dealer
 	public Dealer() {
 		score = 0;
 		hand = new ArrayList<>();
+		hand2 = new ArrayList<>();
 	}
 	
 	//get/set functions
@@ -22,6 +24,10 @@ public class Dealer {
 	public List<Card> getHand()
 	{
 		return hand;
+	}
+	
+	public List<Card> getHand2(){
+		return hand2;
 	}
 	
 	public void setScore(int n)
@@ -42,6 +48,13 @@ public class Dealer {
 		//show that the card is face up
 		hand.get(1).setFace();
 		
+	}
+	
+	public void split()
+	{
+		if(hand.get(0).getNumber().equals(hand.get(1).getNumber())) {
+			hand2.add(hand.remove(1));
+		}
 	}
 	
 	//function for adding and checking the score
