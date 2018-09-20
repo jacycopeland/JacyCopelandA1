@@ -4,13 +4,14 @@ Name: Jacy Copeland
 Id#: 101037790
 Date Started: September 8th 2018
 
-Current Date: September 19th 2018
+Current Date: September 20th 2018
 End Date:  September 20th 2018
 
 Purpose: to create a simple Blackjack program using TDD.
 
 File List:  
             Blackjack.java - the final game in console version.
+            Blackjack.txt - file that contains a preset deck for testing file input
             BlackjackTest.java -  coe for testing the game
             Card.java - class definition of a card
             CardTest.java - a class dedicated to testing a card    
@@ -20,17 +21,20 @@ File List:
             DealerTest.java - a class that tests different Dealer functions and hands
             Game.java - class that merges the game components together
             GameTest.java - test code for the blackjack game
+            log.png - test log for a player initial blackjack detection
+            Main.java - the main class
             Player.java - a class that defines a player
             PlayerTest.java - a class that tests funtionality of a player
+            v2CorrectionGridBJAssignment -  update correction grid with completed tasks
 
 
 
         
 Goals Completed:Create a Respository, set up dependecies, card and deck classes completed.
 
-Important meathods:
+Important meathods: Game meathods are tested in console using a complete deck of 52 cards in shuffled order.
 
-Limitations: Cannot currently accept file input
+Limitations: Cannot accept different inputs.  Blackjack.txt must be updated to support a new deck.  Splitting not supported.  GUI not supported. Cannot detect duplicate cards in the file.
 
 Notes: player and game each only have one test file as it can be rerun with different inputs from the player.  Log of a game test shows that blackjack can be detected initially. I will try to submmit the log in the submission as well as include it here.  If it doesnt work I have a copy saved to my eclipse workspace as proof of detection.  Line 284 onwards shows a sucessful balckjack detection.  Anything before that is proof that cards are added and shuffled.
 
