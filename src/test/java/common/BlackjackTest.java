@@ -10,6 +10,10 @@ public class BlackjackTest  extends TestCase {
 		g.console();
 	}
 	
-
+	public void testFile()
+	{
+		Blackjack g = new Blackjack();
+		g.file();
+	}
 
 }

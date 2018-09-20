@@ -160,22 +160,23 @@ public class DealerTest extends TestCase {
 	d.winOrBust();
 	}
 	
-	public void testSplit() {
+	/*public void testSplit() {
 		
 		Dealer d = new Dealer();
 		List<Card> l = new ArrayList<>();
 		Deck e = new Deck(l);
 		
 		e.insertCard(new Card('D',"9",9));
-		e.insertCard(new Card('H',"9",9));
+		e.insertCard(new Card('S',"10",10));
 		e.insertCard(new Card('D',"2",9));
 		e.insertCard(new Card('S',"4",9));
 		e.insertCard(new Card('C',"9",9));
+		e.insertCard(new Card('H',"9",9));
 		
 		System.out.println("The Dealer is drawing Cards: ");
 		 d.initalDraw(e);
 		 
-		 split();
+		 d.split();
 		
 		System.out.println("Checking dealers current score: ");
 		//fuction to check if the dealer has a blackjack
@@ -191,7 +192,7 @@ public class DealerTest extends TestCase {
 		System.out.println("Blackjack or bust?");
 		//check for a blackjack or bust
 		d.winOrBust();
-	}
+	}*/
 	
 
 }
