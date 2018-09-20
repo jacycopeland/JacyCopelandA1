@@ -103,7 +103,7 @@ public class Game {
 	public void startGameFile() throws IOException {
 		System.out.println("Welcome to Blackjack!\n\n");
 	//	System.out.println("Here is the player's initial hand: \n");
-		//player draws
+		//player drawsF
 		
 		//deck.shuffle();
 		
@@ -111,11 +111,11 @@ public class Game {
 		//clear the deck so it can use files
 		while(!deck.getDeck().isEmpty())
 		{
-			deck.getDeck().remove(0);
+			deck.drawCard();
 		}
 		
 		//add in the files to read 
-		BufferedReader buffer = new BufferedReader(new FileReader("BlackJack.txt"));
+		BufferedReader buffer = new BufferedReader(new FileReader("src/BlackJack.txt"));
 		
 			try {
 				String line = buffer.readLine();
@@ -124,7 +124,7 @@ public class Game {
 				{
 					//make 2 strings
 					char suit = line.charAt(0);
-					String num  = line.substring(1, 2);
+					String num  = line.substring(1);
 					int p =0;
 					
 					if(suit == 'C'|| suit == 'D'||suit == 'H'||suit == 'S') {
@@ -141,8 +141,9 @@ public class Game {
 						else {
 							p = (Integer.parseInt(num));
 						}
-						
+						//System.out.println("x");
 						deck.insertCard(new Card(suit, num, p));
+						line = buffer.readLine();
 					}
 				}
 			}finally {
@@ -153,7 +154,7 @@ public class Game {
 					e.printStackTrace();
 				}
 			}
-	
+		System.out.println(deck.getDeck().get(deck.getSize()-1));
 		player.initalDraw(deck);
 		
 		//System.out.println("\n");
